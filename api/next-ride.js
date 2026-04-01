@@ -1,26 +1,7 @@
-import express from 'express';
-import cors from 'cors';
-import dotenv from 'dotenv';
 import axios from 'axios';
 import GtfsRealtimeBindings from 'gtfs-realtime-bindings';
 
-dotenv.config();
-
-const app = express();
-app.use(cors());
-app.use(express.json());
-
 const MTA_API_KEY = process.env.MTA_API_KEY;
-
-const placeSuggestions = [
-  { name: 'Times Square', type: 'attraction' },
-  { name: 'Central Park', type: 'park' },
-  { name: 'The High Line', type: 'walk' },
-  { name: 'MoMA', type: 'museum' },
-  { name: 'Chelsea Market', type: 'food' }
-];
-
-const gamePromo = 'Have you tried GTABUS yet? It\'s a fast, fun 3D-style NYC bus simulator game with route challenges and a leaderboard!';
 
 const staticStops = [
   { stop_id: 'A33', name: '34 St-Penn Station', lat: 40.7506, lon: -73.9935 },
