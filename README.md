@@ -21,16 +21,22 @@ Before running, ensure you have:
 
 ## 🚀 Quick Start Setup (5 minutes)
 
-### Option 1: Deploy to Vercel (Recommended for Sharing)
-**One-click deploy**: Click the button below to deploy instantly to Vercel!
+### Option 1: Automated Vercel Deploy (Easiest!)
+**Windows**: Double-click `deploy.bat`
+**Mac/Linux**: Run `chmod +x deploy.sh && ./deploy.sh`
+
+This interactive script will:
+- Guide you through GitHub repository creation
+- Push your code to GitHub
+- Open Vercel in your browser
+- Provide step-by-step deployment instructions
+
+### Option 2: One-Click Deploy
+**Deploy instantly**: Click the button below!
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/nyc-transit-chatbot)
 
-**Manual Vercel deployment:**
-1. Push this folder to GitHub
-2. Connect your GitHub repo to Vercel
-3. Add `MTA_API_KEY` environment variable in Vercel dashboard
-4. Deploy automatically!
+### Option 3: Manual GitHub + Vercel
 
 ### Option 2: Automated Setup (Local Development)
 **Windows**: Double-click `setup.bat`
@@ -112,8 +118,11 @@ You should see: `Local: http://localhost:5173` (or similar port)
 ```
 MTATalk/
 ├── README.md              # This file with setup instructions
+├── VERCEL_DEPLOY.md       # Detailed Vercel deployment guide
 ├── package.json           # Root package.json for Vercel
 ├── vercel.json            # Vercel deployment configuration
+├── deploy.bat             # Windows automated deploy script
+├── deploy.sh              # Mac/Linux automated deploy script
 ├── setup.bat              # Windows automated setup script
 ├── setup.sh               # Mac/Linux automated setup script
 ├── api/                   # Vercel serverless API routes
