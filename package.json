@@ -1,0 +1,17 @@
+{
+  "name": "nyc-transit-voice-chatbot",
+  "version": "1.0.0",
+  "description": "Voice-powered NYC transit chatbot with real-time MTA data and GTABUS promotion",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run preview"
+  },
+  "dependencies": {
+    "gtfs-realtime-bindings": "^1.1.1"
+  },
+  "devDependencies": {},
+  "keywords": ["nyc", "transit", "chatbot", "voice", "mta", "gtabus"],
+  "author": "Your Name",
+  "license": "MIT"
+}
